@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  export dafault {
+  export default {
     name: 'Posts',
     data () {
       return {

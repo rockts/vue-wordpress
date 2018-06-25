@@ -1,46 +1,23 @@
 <template>
   <div id="app">
-    <notes></notes>
+    <img src="./assets/logo.png">
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Notes from './components/Notes'
-import 'semantic-ui-css/semantic.min.css'
-
 export default {
-  name: 'App',
-  components: {
-    Notes
-  }
+  name: 'app'
 }
 </script>
 
 <style>
-.notes {
-  margin-top: 32px;
-}
-
-.notes .ui textarea {
-  border: none;
-  font-size: 16px;
-  padding: 0;
-  margin: 32px 0;
-}
-
-.ui.items > .item > .content > .header {
-  display: block;
-  cursor: pointer;
-}
-
-.ui.items > .item > .meta {
-  width: 88px;
-  color: rgba(0, 0, 0, 0.4);
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-
-.trash.icon {
-  cursor: pointer;
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>
